@@ -1,38 +1,66 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Opinión</title>
+    <title>OpiniÃ³n</title>
   </head>
-  <body>
-    <H1>TU OPINIÓN CUENTA</H1><BR>
-    <bold><h2>Rellena con sinceridad</h2></bold>
-    <p> 
-    <form> 
-    <label for="nombre">¿Cuál es tu nombre?</label><br>
-    <input name="nombre" type ="text" id="nombre">
-    <p>
-    <label for="correo">¿Cuál es tu dirección de correo electrónico?</label><br>
-     <input name="correo" type ="email" id="correo" value="rafael.carreras@ua.es">
-    </p>
-      
-    <p>
-    <label for="edad">Indica tu edad</label><br>
-     <input name="edad" type="number" id="edad">
-    </p>
-    
-     <p>
-     <label for="edad2">Indica tu edad aproximada</label><br>
-     <input name="edad2" type="range" id="edad2">
-    </p>
-     
-      <p>
-     <label for="telefono">Indica tu número de teléfono</label><br>
-     <input name="telefono" type="tel" id="telefono">
-    </p>
-     
-      
-    </form>
-   
-    
+  <body style="background-color:#e8f6f3;">
+    <h1>TU OPINIÃ“N CUENTA Y MUCHO.</h1>
+    <h2>Por favor, rellena el siguiente formulario.</h2>
+    <form action="https://cancerbero01.github.io/disenoWeb/ejerciciosTema3/reOpinion.html"
+
+      method="get">
+      <fieldset><legend>Datos de contacto</legend> <label for="nombre">Â¿CÃ³mo te
+          llamas?</label><br>
+        <input name="nombre" id="nombre" autofocus="" type="text">
+        <p> <label for="correo">Â¿CuÃ¡l es tu direcciÃ³n de correo electrÃ³nico?</label><br>
+          <input name="correo" id="correo" value="rafael.carreras@ua.es" type="email">
+        </p>
+        <p> <label for="edad">Indica tu edad</label><br>
+          <input name="edad" id="edad" type="number"> </p>
+        <p> <label for="edad2">Indica tu edad aproximada</label><br>
+          <input name="edad2" id="edad2" type="range"> </p>
+        <p> <label for="telefono">Indica tu nÃºmero de telÃ©fono</label><br>
+          <input name="telefono" id="telefono" type="tel"> </p>
+      </fieldset>
+      <br>
+      <fieldset> <legend>Elige tu envÃ­o</legend>
+        <div>
+          <p>Â¿QuÃ© prefieres a la hora de comprar una impresora?</p>
+          <p> <input name="preferencias" value="barata" id="barata" type="radio">
+            <label for="barata">Sea barata</label><br>
+            <input name="preferencias" value="coloryBN" id="coloryBN" type="radio">
+            <label for="coloryBN">Imprima tanto a color como en blanco y negro.
+            </label><br>
+            <input name="preferencias" value="doblecara" id="doblecara" type="radio">
+            <label for="rico">Imprima a doble cara.</label><br>
+            <input name="preferencias" value="otro" id="otro" type="radio"> <label
+
+              for="rico">Otro.</label><br>
+          </p>
+          <div>
+            <p>Â¿QuÃ© marcas de impresora conoces?</p>
+            <p> <input name="Canon" id="canon" type="checkbox"> Canon<br>
+              <input name="HP" id="HP" type="checkbox"> HP <br>
+              <input name="Brother" id="Brother" type="checkbox"> Brother<br>
+            </p>
+          </div>
+          <p> <label for="frecuenciaImpresion">Â¿Con quÃ© frecuencia usas la
+              impresora en casa?</label> </p>
+          <select id="grado" name="grado">
+            <optgroup label="Poco">
+              <option value="Muy poco" selected="selected">Muy Poco</option>
+              <option value="Poco">Poco</option>
+            </optgroup> <optgroup label="Mucho">
+              <option value="algo" selected="selected">Algo</option>
+              <option value="Mucho">Mucho</option>
+            </optgroup>
+          </select>
+        </div>
+        <p> Si quieres dejarnos alguna sugerencia o comentario:</p>
+        <textarea id="sugerencias" name="sugerencias" cols="40" rows="10"></textarea>
+      </fieldset>
+      <br>
+      <input value="Enviar" type="submit"> </form>
   </body>
 </html>
+
