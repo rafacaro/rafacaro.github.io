@@ -1,0 +1,32 @@
+body>header{margin-top:60px}
+
+
+nav a{
+    padding:2px; 
+    border: dotted 2px yellow;
+    width: 5px 
+  font-family: verdana}  
+
+nav a:hover{
+  background-color: grey;
+  padding:2px; 
+    border: dotted 2px whitesmoke;
+    width: 5px 
+  font-family: verdana}  
+
+section article p{
+    padding: 2em 1em;
+    margin-bottom: 2em
+    background-color:#e9ecef
+        border-radius:1em;
+}
+
+p{
+  background-color: grey
+
+}
+
+a {text-decoration: none;}
+h1{
+  font-family: 'Coiny', cursive;
+}
